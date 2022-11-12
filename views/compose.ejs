@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<%- include("head-partial") -%>
+
+<body>
+
+  <!-- Navigation section -->
+  <%- include("navigation-partial") -%>
+  <hr>
+
+
+
+  <!-- Compose section -->
+  <section id="compose-section">
+
+    <h2> New Post </h2>
+    <hr>
+
+    <!-- POST request form for new post containing title and text -->
+    <form id="title-form" action="/compose" method="post">
+
+      <!-- Title input field -->
+      <p> Title </p>
+      <input type="text" class="compose-title" name="postTitle" maxlength="5000" autocomplete="off" />
+
+      <!-- Image input field -->
+      <p> Image URL </p>
+      <input type="text" class="compose-file" name="postImageURL">
+
+      <!-- Text input field -->
+      <p> Text </p>
+      <textarea class="compose-text" name="postText" maxlength="5000"></textarea>
+
+      <!-- Submit button used to pass list title of added task to js on POST request -->
+      <br>
+      <button type="submit" class="submit-btn" name="post-submit" value="">
+        Post
+      </button>
+
+    </form>
+
+  </section>
+
+
+
+  <!-- Footer section -->
+  <%- include("footer-partial") -%>
+
+</body>
+
+</html>

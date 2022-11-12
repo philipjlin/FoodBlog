@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<%- include("head-partial") -%>
+
+<body>
+
+  <!-- Navigation section -->
+  <%- include("navigation-partial") -%>
+  <hr>
+
+
+
+  <!-- Post (single) section -->
+  <section id="post-section">
+
+    <h2 class="post-title"> <%= postTitle %> </h2>
+
+    <div class="post-list">
+
+      <img class="post-img" src="<%= postImageURL %>" />
+
+      <p class="post-text"> <%= postText %> </p>
+
+      <div class="edit-options">
+
+        <a href="/edit/<%= postTitle %>"> <i class="fa-solid fa-pen"></i> </a>
+
+
+        <!-- POST request form for delete-->
+        <form action="/delete" method="post">
+
+          <input type="hidden" name="postId" value="<%= postId %>">
+
+          <!-- Submit button used to pass list title of added task to js on POST request -->
+          <button type="submit" class="submit-btn" name="delete-submit">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer section -->
+  <%- include("footer-partial") -%>
+
+</body>
+
+</html>

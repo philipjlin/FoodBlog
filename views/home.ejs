@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<%- include("head-partial") -%>
+
+<body>
+
+  <!-- Navigation section -->
+  <%- include("navigation-partial") -%>
+  <hr>
+
+
+
+  <!-- Home section -->
+  <section id="home-section">
+
+
+    <h2> A Blog </h2>
+
+    <hr />
+
+    <p class="home-description">
+      This is Phil's Kitchen. <br /> A sampler platter of what you'll find inside!
+    </p>
+
+
+  </section>
+
+
+    <!-- Gallery -->
+    <hr />
+
+    <div class="gallery container-fluid">
+    	<div class="row">
+    		<div class="col-md-8">
+    			<div class="row">
+    				<div class="col-md-12 gx-1">
+              <img class="w-100 mb-1" src="<%= imgs[0] %>" />
+    				</div>
+    			</div>
+    		</div>
+    		<div class="col-md-4">
+    			<div class="row">
+    				<div class="col-md-12 gx-1">
+              <img class="w-100 mb-1" src="<%= imgs[1] %>" />
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-12 gx-1">
+              <img class="w-100 mb-1" src="<%= imgs[2] %>" />
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-4 gx-1">
+          <img class="w-100 mb-1" src="<%= imgs[3] %>" />
+    		</div>
+    		<div class="col-md-4 gx-1">
+          <img class="w-100 mb-1" src="<%= imgs[4] %>" />
+    		</div>
+    		<div class="col-md-4 gx-1">
+          <img class="w-100 mb-1" src="<%= imgs[5] %>" />
+    		</div>
+    	</div>
+    </div>
+
+    <hr />
+
+
+
+  <!-- Footer section -->
+  <%- include("footer-partial") -%>
+
+</body>
+
+</html>

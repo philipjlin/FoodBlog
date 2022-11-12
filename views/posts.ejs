@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<%- include("head-partial") -%>
+
+<body>
+
+  <!-- Navigation section -->
+  <%- include("navigation-partial") -%>
+  <hr>
+
+
+
+  <!-- Posts (list of posts) section -->
+  <section id="post-section">
+
+    <h2> <%= heading %> </h2>
+
+    <hr />
+
+    <div class="post-list">
+
+      <!-- Loop through and display posts array from server -->
+      <%   for(var i=0; i<posts.length; i++){   %>
+
+        <h2 class="post-title">
+          <%= posts[i].title %>
+        </h2>
+
+        <img class="post-img" src="<%= posts[i].imageURL %>" />
+
+        <p class="post-text">
+          <%= posts[i].text %>
+        </p>
+
+        <a href="/posts/<%= posts[i].title %>"> Link To Post </a>
+        <hr />
+        <br />
+
+    <%   }                                     %>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer section -->
+  <%- include("footer-partial") -%>
+
+</body>
+
+</html>

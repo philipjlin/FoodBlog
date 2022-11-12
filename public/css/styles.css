@@ -1,0 +1,255 @@
+/***** TAG SELECTORS *****/
+body {
+
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
+  color: #25414D;
+  background-color: white;
+}
+
+hr{
+
+  color: #A2B5BB;
+  margin: 2% 0;
+}
+
+p {
+
+  line-height: 2;
+}
+
+a:link, a:visited {
+
+  text-decoration: none;
+  color: #D7B221;
+}
+
+a:hover{
+
+  text-decoration: none;
+  color:grey;
+}
+
+a:hover img{
+
+  transform: scale(1.5);
+}
+
+
+
+
+
+/***** NAVIGATION MENU *****/
+.top-banner{
+
+  height: 50px;
+  background-color: black;
+}
+
+#search-form{
+
+  height: 100%;
+  width: 40%;
+  float: right;
+}
+
+#search-bar{
+
+  color: white;
+  height: 100%;
+  width: 90%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-btn {
+
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.fa-magnifying-glass{
+
+  color: white;
+}
+
+#navigation{
+
+  background-color: white;
+  text-align: left;
+}
+
+#navbar{
+
+  padding: 0;
+}
+
+.navbar-brand{
+
+  font-size: 3rem;
+  margin-left: 10%;
+}
+
+.nav-item{
+
+  letter-spacing: 0.8px;
+}
+
+.navbar-nav{
+
+  width: 50%;
+  margin: auto 10% auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  list-style-type: none;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+
+
+
+/***** HOME SECTION *****/
+#home-section, #about-section{
+
+  background-color: white;
+  margin: auto 10%;
+}
+
+.home-description{
+
+  text-align: center;
+  margin: auto 20%;
+  padding: 5%;
+}
+
+.gallery{
+
+  width: 100%;
+  overflow: overlay;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+
+/***** COMPOSE SECTION *****/
+#compose-section{
+
+  background-color: white;
+  margin: auto 10%;
+  padding-bottom: 2%;
+}
+
+#title-form{
+
+  margin: auto 20%;
+}
+
+.compose-btn{
+
+  background-color: #25316D;
+  border-radius: 5%;
+}
+
+.compose-title, .compose-file{
+
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.compose-text{
+
+  width: 100%;
+  height: 10em;
+}
+
+
+
+
+
+/***** POST SECTION *****/
+#post-section{
+
+  margin: auto 10%;
+}
+
+#post-section img{
+
+  height: 100%;
+  width: 100%;
+}
+
+#post-section .submit-btn{
+
+	border: none;
+  background-color: white;
+}
+
+.post-title, .post-img, .post-text{
+
+  margin-top: 5%;
+}
+
+.post-list{
+
+  margin: auto 20%;
+}
+
+.edit-options{
+
+  display: flex;
+  gap: 50px;
+  margin-bottom: 5%;
+}
+
+#banner{
+
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+}
+
+.fa-solid{
+
+  color: #25316D;
+}
+
+
+
+
+
+/***** FOOTER SECTION *****/
+#footer {
+
+  text-align: center;
+  background-color: black;
+  padding: 2% 0 2%;
+  margin: 0;
+}
+
+.social-icon{
+
+  margin: 1%;
+  height: 3%;
+  width: 3%;
+}
+
+.footer-msg{
+
+  color: white;
+  font-family: 'Archivo Narrow';
+  font-size: 0.75rem;
+  margin-top: 2%;
+}
