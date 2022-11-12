@@ -5,7 +5,6 @@
 //Required packages
 const path = require("path");
 const express = require("express");
-const https = require("node:https");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const caseModule = require(path.join(__dirname, "caseModule.js"));  //Required local module
