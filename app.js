@@ -21,7 +21,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Mongoose
-mongoose.connect("mongodb+srv://admin:adminpassword@philipjlin.9wd1zfh.mongodb.net/blog");
+//mongoose.connect("mongodb://localhost:27017/blog");
+mongoose.connect("mongodb+srv://admin:adminpassword@philipjlin.zrd36po.mongodb.net/blog");
 
 
 
@@ -204,7 +205,7 @@ app.post("/compose", function(req, res){
   let reqImageURL = req.body.postImageURL;
   let reqText = req.body.postText;
 
-  //Create task document to save to database
+  //Create post document to save to database
   let postToAdd = new Post({
 
     title: reqTitle,
