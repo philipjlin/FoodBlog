@@ -1,6 +1,8 @@
 /*
  * Main server
  */
+ //Env variables
+ require('dotenv').config();
 
 //Required packages
 const path = require("path");
@@ -22,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Mongoose
 //mongoose.connect("mongodb://localhost:27017/blog");
-mongoose.connect("mongodb+srv://admin:adminpassword@philipjlin.zrd36po.mongodb.net/blog");
+mongoose.connect(process.env.MONGODB_ROOT + "blog");
 
 
 
