@@ -1,5 +1,5 @@
 /*
- * Main server
+ * Blog - Main server
  */
  //Env variables
  require('dotenv').config();

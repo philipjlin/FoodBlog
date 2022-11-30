@@ -2,7 +2,7 @@
 body {
 
   margin: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
   color: #25414D;
   background-color: white;
@@ -22,7 +22,7 @@ p {
 a:link, a:visited {
 
   text-decoration: none;
-  color: #D7B221;
+  color: #367E18;
 }
 
 a:hover{
@@ -108,7 +108,7 @@ a:hover img{
   justify-content: space-around;
 
   list-style-type: none;
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
@@ -129,7 +129,7 @@ a:hover img{
 
   text-align: center;
   margin: auto 20%;
-  padding: 5%;
+  padding: 1%;
 }
 
 .gallery{
@@ -157,7 +157,7 @@ a:hover img{
 
 .compose-btn{
 
-  background-color: #25316D;
+  background-color: #EAE3D2;
   border-radius: 5%;
 }
 
