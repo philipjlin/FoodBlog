@@ -20,9 +20,9 @@ MongoDB used as the database.
 
 
 ## High Level Components
-    * Display table for games
+    * Views to display, compose, and edit posts
+    * Database with defined schemas to store objects
     * CSS style sheet 
-    * JS logic engine
 
 
 ## Class Overview
@@ -35,12 +35,15 @@ MongoDB used as the database.
 
 ## Views
     Home
+        - search
 
     About
 
     Compose
 
     Post
+        - edit
+        - delete
 
     Posts
 
