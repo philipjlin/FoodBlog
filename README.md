@@ -28,6 +28,8 @@ MongoDB used as the database.
 ## Class Overview
     CSS
         - styles.css
+
+<br>
     
     Node Application
         - app.js
@@ -37,13 +39,21 @@ MongoDB used as the database.
     Home
         - search
 
+<br>
+
     About
 
+<br>
+
     Compose
+
+<br>
 
     Post
         - edit
         - delete
+
+<br>
 
     Posts
 
